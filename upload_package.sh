@@ -1,6 +1,9 @@
+# export DEFAULT_REGION={Your Default Region}
+
 docker build -t py3.9 .
+docker run --name py3.9 py3.9:latest
 docker cp py3.9:/temp/package ./
 zip -r my-deployment-package.zip ./package
 zip -g my-deployment-package.zip lambda_function.py
 aws configure set default.region $DEFAULT_REGION
-ws lambda update-function-code --function-name webex_bot --zip-file fileb://my-deployment-package.zip
+aws lambda update-function-code --function-name WEBEXBOT_OPENAI --zip-file fileb://my-deployment-package.zip
