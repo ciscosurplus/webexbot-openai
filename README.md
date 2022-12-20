@@ -17,9 +17,9 @@ If there is an input from the user, Chatbot logic accesses the openai API with t
 - OpenAI account
 - AWS account
 
-> To use OpenAI's API, you need to create an account and get an API key. This lab uses the $18.00 free trial allotted for the first time.
+> __To use OpenAI's API, we need to create an account and get an API key. This lab uses the $18.00 free trial allotted for the first time.__
 
-> Each AWS resource is billed.
+> __Each AWS resource is billed.__
 
 ## What you do is
 
@@ -32,15 +32,25 @@ If there is an input from the user, Chatbot logic accesses the openai API with t
 
 ## 1. Create a Webex bot
 
-Create a bot on [Webex for Developers](https://developer.webex.com/). You can go to the creation page from `Start Building Apps`.
+Create a bot on [Webex for Developers](https://developer.webex.com/). You can go to the creation page from __Start Building Apps__ .
 
 ![](./images/webexbot_openai.001.png)
 
+Select __Bots__ .
+
 ![](./images/webexbot_openai.002.png)
+
+Enter __Bot name__ , __Bot username__ , select __Icon__ and click __Add Bot__ .
 
 ![](./images/webexbot_openai.003.png)
 
+Enter a __Description__ and click __Add Bot__ .
+
 ![](./images/webexbot_openai.004.png)
+
+Once the bot is created, copy the __Bot access token__ to the editor.
+
+## 2. Create AWS Lambda function
 
 ![](./images/webexbot_openai.005.png)
 
