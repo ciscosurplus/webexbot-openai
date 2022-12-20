@@ -55,7 +55,7 @@ def respond_to_message(webhook, me):
     else:
         webex_api.messages.create(
             room.id,
-            markdown=openai_api(message.text, room)
+            markdown=openai_api(message.text)
         )
 
         return "OK"
