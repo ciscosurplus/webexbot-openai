@@ -15,17 +15,14 @@ If there is an input from the user, Chatbot logic accesses the openai API with t
 - webexteamssdk
 - Cisco webex account
 - OpenAI account
-- AWS Lambda
-- AWS API Gateway
-- AWS Cloud9(Ubuntu18.04)
+- AWS account
 
-<p class="warn">To use OpenAI's API, you need to create an account and get an API key. This lab uses the $18.00 free trial allotted for the first time.</p>
+> To use OpenAI's API, you need to create an account and get an API key. This lab uses the $18.00 free trial allotted for the first time.
 
-<p class="warn">Each AWS resource is billed.</p>
+> Each AWS resource is billed.
 
+## What you do is
 
-
-What you do is:
 1. Create a Webex bot
 2. Create AWS Lambda function
 3. Create AWS API Gateway
@@ -33,9 +30,9 @@ What you do is:
 5. Create an AWS Cloud9 instance
 6. Upload Deployment package to Lambda
 
+## 1. Create a Webex bot
 
-
-## Installation
+Create a bot on [Webex for Developers](https://developer.webex.com/). You can go to the creation page from `Start Building Apps`.
 
 ![](./images/webexbot_openai.001.png)
 
