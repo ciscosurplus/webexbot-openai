@@ -3,7 +3,7 @@
 docker build -t py3.9 .
 docker run --name py3.9 py3.9:latest
 docker cp py3.9:/temp/package ./
-cd /package
+cd ./package
 zip -r ../my-deployment-package.zip .
 cd ../
 zip -g my-deployment-package.zip lambda_function.py
