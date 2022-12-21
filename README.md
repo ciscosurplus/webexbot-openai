@@ -162,6 +162,32 @@ Click __Create__. Since it can be created, start the IDE from __Open in Cloud9__
 
 ## 6. Upload Deployment package to Lambda
 
+Upload the deployment package containing Bot logic and related libraries to Lambda in the Cloud9 terminal as follows.
+
+### Define default region as environment variable
+
+```shell-session
+export DEFAULT_REGION=ap-northeast-1
+```
+
+### Clone the repository
+
+```shell-session
+git clone https://github.com/masanobu48154/webexbot-openai.git
+```
+
+### Go into the webexbot-openai directory
+
+```shell-session
+cd webexbot-openai/
+```
+
+### Run upload_package.sh.
+
+```shell-session
+bash upload_package.sh 
+```
+
 ```shell-session
 cloud9:~/environment $ export DEFAULT_REGION=ap-northeast-1
 cloud9:~/environment $ git clone https://github.com/masanobu48154/webexbot-openai.git
@@ -201,9 +227,9 @@ Collecting openai
 
 {
     "FunctionName": "WEBEXBOT_OPENAI",
-    "FunctionArn": "arn:aws:lambda:ap-northeast-1:771517407393:function:WEBEXBOT_OPENAI",
+    "FunctionArn": "arn:aws:lambda:ap-northeast-1:012345678901:function:WEBEXBOT_OPENAI",
     "Runtime": "python3.9",
-    "Role": "arn:aws:iam::771517407393:role/service-role/WEBEXBOT_OPENAI-role-wseuyy5t",
+    "Role": "arn:aws:iam::012345678901:role/service-role/WEBEXBOT_OPENAI-role-wseuyy5t",
     "Handler": "lambda_function.lambda_handler",
     "CodeSize": 43335723,
     "Description": "",
@@ -215,7 +241,7 @@ Collecting openai
     "TracingConfig": {
         "Mode": "PassThrough"
     },
-    "RevisionId": "1f795f02-0db7-4fb2-8d34-539a33d475fd",
+    "RevisionId": "1f795f02-0db7-4fb2-8d34-012345678901",
     "State": "Active",
     "LastUpdateStatus": "InProgress",
     "LastUpdateStatusReason": "The function is being created.",
