@@ -4,9 +4,8 @@ Webex bot working with openai's API
 ## Overview
 In this lab, we will create an interactive webex chatbot using openai's API for responses.
 
-Chatbot logic resides in Lambda, an aws serverless service. We use aws Cloud9 as our development environment. That way we can upload code to Lambda more easily.
-
-If there is an input from the user, Chatbot logic accesses the openai API with that input as a prompt and outputs the response to the user.
+Chatbot logic resides in Lambda, an aws serverless service. We use aws Cloud9 as our development environment to upload Chatbot logic to Lambda more easily.
+If there is input from the user, Chatbot logic accesses openai's API with that input as a prompt. Then send that response back to the user.
 
 ## Requirements
 
@@ -167,7 +166,7 @@ Upload the deployment package containing Bot logic and related libraries to Lamb
 ### Define default region as environment variable
 
 ```shell-session
-export DEFAULT_REGION=ap-northeast-1
+export DEFAULT_REGION={ Your Region }
 ```
 
 ### Clone the repository
