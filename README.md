@@ -26,7 +26,7 @@ If there is an input from the user, Chatbot logic accesses the openai API with t
 1. Create a Webex bot
 2. Create AWS Lambda function
 3. Create AWS API Gateway
-4. Create CIsco Webex webhook
+4. Create Cisco Webex webhook
 5. Create an AWS Cloud9 instance
 6. Upload Deployment package to Lambda
 
@@ -122,7 +122,7 @@ Copy the __Invoke URL__ of the POST method to the editor.
 
 ![](./images/webexbot_openai.020.png)
 
-## 4. Create CIsco Webex webhook
+## 4. Create Cisco Webex webhook
 
 Log in to [Webex for Developers](https://developer.webex.com/) and from the left pane of the [Documentation](https://developer.webex.com/docs) page do the following:<br>
 __APIs__ => __Webex APIs__ => __Messaging__ => __Reference__ => __Webhooks__ => __POST Create a Webhook__
@@ -256,3 +256,7 @@ Collecting openai
 }
 
 ```
+
+## Let's try it on webex.
+
+![](./images/webexbot_openai.026.png)
