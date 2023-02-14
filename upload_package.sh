@@ -1,11 +1,6 @@
 # export DEFAULT_REGION={Your Default Region}
+# export LAMBDA_FUNCTION_NAME={ Lambda Function name }
 
-if [ $DEFAULT_REGION == "us-east-1" ]; then
-    sudo rm -rf /usr/local/bin/aws
-    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-    unzip awscliv2.zip
-    sudo ./aws/install
-fi
 docker build -t py3.9 .
 docker run --name py3.9 py3.9:latest
 docker cp py3.9:/temp/package ./
