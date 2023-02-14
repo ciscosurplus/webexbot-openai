@@ -14,4 +14,4 @@ zip -r ../my-deployment-package.zip .
 cd ../
 zip -g my-deployment-package.zip lambda_function.py
 aws configure set default.region $DEFAULT_REGION
-aws lambda update-function-code --function-name $LAMBDA_FUNCTION_NAME name --zip-file fileb://my-deployment-package.zip
+aws lambda update-function-code --function-name $LAMBDA_FUNCTION_NAME --zip-file fileb://my-deployment-package.zip
