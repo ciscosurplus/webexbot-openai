@@ -141,12 +141,32 @@ Enter the parameters in the right pane as shown below.
 >   <dt><strong>targetUrl:</strong></dt>
 >   <dd>Paste the <strong>Invoke URL</strong> of the POST method that you copied when creating API Gateway.</dd>
 >   <dt><strong>resources:</strong></dt>
->   <dd>Enter <strong>messages</strong>.</dd>
+>   <dd>Enter <strong>messages</strong></dd>
 >   <dt><strong>events:</strong></dt>
->   <dd>Enter <strong>created</strong>.</dd>
+>   <dd>Enter <strong>created</strong></dd>
 > <dl>
 
 ![](./images/webexbot_openai.022.png)
+
+The following format is printed with 200/OK.
+
+"*" will store your value.
+
+```
+{
+  "id": "**********************************************************************************************",
+  "name": "WEBEXBOT WITH OPENAI",
+  "targetUrl": "https://**********.execute-api.ap-northeast-1.amazonaws.com/prod/messages",
+  "resource": "messages",
+  "event": "created",
+  "orgId": "***************************************************************************************",
+  "createdBy": "*******************************************************************************",
+  "appId": "******************************************************************************************************************",
+  "ownedBy": "creator",
+  "status": "active",
+  "created": "2023-02-14T02:58:58.914Z"
+}
+```
 
 ## 5. Create an AWS Cloud9 instance
 
