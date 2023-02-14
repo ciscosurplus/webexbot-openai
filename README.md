@@ -166,10 +166,11 @@ Click __Create__. Since it can be created, start the IDE from __Open in Cloud9__
 
 Upload the deployment package containing Bot logic and related libraries to Lambda in the Cloud9 terminal as follows.
 
-### Define default region as environment variable
+### Define default region and Lambda function name as environment variable
 
 ```shell-session
 export DEFAULT_REGION={ Your Region }
+export LAMBDA_FUNCTION_NAME={ Lambda Function name }
 ```
 
 ### Clone the repository
