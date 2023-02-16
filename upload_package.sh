@@ -4,8 +4,9 @@
 export IMAGE_NAME=`openssl rand -hex 4`
 export CONTAINER_NAME=`openssl rand -hex 4`
 docker build -t $IMAGE_NAME:py3.9 .
-docker run --rm --name $CONTAINER_NAME $IMAGE_NAME:py3.9
-docker cp py3.9:/temp/package ./
+docker run --name $CONTAINER_NAME $IMAGE_NAME:py3.9
+docker cp $CONTAINER_NAME:/temp/package ./
+docker rm $CONTAINER_NAME
 cd ./package
 zip -r ../my-deployment-package.zip .
 cd ../
