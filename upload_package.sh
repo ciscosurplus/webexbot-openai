@@ -1,8 +1,10 @@
 # export DEFAULT_REGION={Your Default Region}
 # export LAMBDA_FUNCTION_NAME={ Lambda Function name }
 
-docker build -t py3.9 .
-docker run --name py3.9 py3.9:latest
+export IMAGE_NAME=`openssl rand -hex 4`
+export CONTAINER_NAME=`openssl rand -hex 4`
+docker build -t $IMAGE_NAME:py3.9 .
+docker run --rm --name $CONTAINER_NAME $IMAGE_NAME:py3.9
 docker cp py3.9:/temp/package ./
 cd ./package
 zip -r ../my-deployment-package.zip .
